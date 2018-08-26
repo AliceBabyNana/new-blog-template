@@ -23,5 +23,9 @@ const InitBlogSetting = () => {
     });
     //set article content img responsive
     $("#content .post-body img").SetImgResponsive();
+    $(".closebar").click(()=>{
+        $(".sidebar").css("display","none");
+        $("#content").css("width","100%");
+    });
 }
 
