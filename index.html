@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>New Blog</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="./content/css/app.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="container-fluid" style="padding-left:0px !important; padding-right: 0px !important;">
+        <!--header-->
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <header id="header">
+                    <div id="header-inner">
+                        <nav class="navbar  navbar-inverse navbar-fixed-top">
+                            <div class="container">
+                                <div class="navbar-header">
+                                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                        aria-expanded="false">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    <a class="navbar-brand" href="#">Brand</a>
+                                </div>
+
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                    <ul class="nav navbar-nav">
+                                        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                                        <li><a href="#">Link</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                                                <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">One more separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <form class="navbar-form navbar-left">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                        </div>
+                                        <button type="submit" class="btn btn-default">Submit</button>
+                                    </form>
+                                    <ul class="nav navbar-nav navbar-right">
+                                        <li><a href="#">Link</a></li>
+                                        <li class="dropdown">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown
+                                                <span class="caret"></span></a>
+                                            <ul class="dropdown-menu">
+                                                <li><a href="#">Action</a></li>
+                                                <li><a href="#">Another action</a></li>
+                                                <li><a href="#">Something else here</a></li>
+                                                <li role="separator" class="divider"></li>
+                                                <li><a href="#">Separated link</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </nav>
+
+                        <div id="header-wrapper" style="background-image:url('./content/image/bg.jpg')">
+                            <div class="BanBan">I'm BanBan Hello world</div>
+                        </div>
+                        <!--wrappper-->
+                        <div class="header-master hidden-xs">
+                            <img class="img-circle header-master-avatar" itemprop="image" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1535262642363&di=62307e64d7209ff32bab1a6353735ac7&imgtype=0&src=http%3A%2F%2Fimg.besoo.com%2Ffile%2F201706%2F17%2F2256211445908.jpg">
+                            <h2><span style="color:blue;">Write the code</span> <span style="color:red;">Change the world</span></h2>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        <!--header end-->
+        <!--main-->
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-md-12">
+                    <div id="content">
+                        <section>
+                            <article class="post">
+                                <div class="post-date">
+                                    <div class="post-month">05月</div>
+                                    <div class="post-day">30</div>
+                                </div>
+                                <div class="post-badge">
+                                    <span><a>分享境</a></span>
+                                </div>
+                                <div class="post-block">
+                                    <header class="post-header">
+                                        <h1 class="post-title"><a>Polymer 初体验</a></h1>
+                                        <div class="post-meta">
+                                            <span class="post-time">
+                                                <span class="glyphicon glyphicon-gift post-meta-item-icon" aria-hidden="true"></span>
+                                                <span class="post-meta-item-text">发表于</span>
+                                                <time title="创建于" datetime="2018-05-30T23:45:43+00:00">2018-05-30</time>
+                                            </span>
+                                            <span class="post-likecount">
+                                                <span class="post-meta-divider">•</span>
+                                                <span class="glyphicon glyphicon-heart-empty post-meta-item-icon" aria-hidden="true"></span>
+                                                <span class="post-meta-item-text">点赞数</span>
+                                                <span>1234</span>
+                                            </span>
+                                            <span class="post-readcount">
+                                                <span class="post-meta-divider">•</span>
+                                                <span class="glyphicon glyphicon-eye-open post-meta-item-icon" aria-hidden=""></span>
+                                                <span class="post-meta-item-text">阅读次数</span>
+                                                <span class="">5707</span>
+                                            </span>
+                                        </div>
+                                    </header>
+                                    <div class="post-body">
+                                        <p>作为开发者，我们都知道组件化、标准化和代码复用的重要性，前端也从未停止过对前端组件化的尝试，产生了各式各样的组件化技术，从 Vue React 等前端框架，到
+                                            webpack 这样的全站打包工具</p>
+
+                                        <img src="https://ooo.0o0.ooo/2017/04/19/58f7246807888.png">
+                                        <div class="text-center post-button">
+                                            <button class="btn btn-danger">阅读全文>></button>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <footer class="post-footer"></footer>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="sidebar">
+                        <section class="mydesc">
+                            <div class="sweet"></div>
+                            <h2>Can u catch me ?</h2>
+                            <div class="my-item">
+                                <a><i class="fa fa-github"></i></a>
+                                <a><i class="fa fa-weibo"></i></a>
+                                <a><i class="fa fa-qq"></i></a>
+                                <a><i class="fa fa-weixin"></i></a>
+                                <a><i class="fa fa-twitter"></i></a>
+                            </div>
+                            <div class="my-item">
+                                    <a><i class="fa fa-google"></i></a>
+                                    <a><i class="fa fa-instagram"></i></a>
+                                    <a><i class="fa fa-facebook"></i></a>
+                                    <a><i class="fa fa-telegram"></i></a>
+                                    <a><i class="fa fa-amazon"></i></a>
+                                    <a><i class="fa fa-steam"></i></a>
+
+                                </div>
+                        </section>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--main end-->
+    </div>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./content/js/app.js"></script>
+</body>
+
+</html>
