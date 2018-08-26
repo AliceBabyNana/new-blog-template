@@ -15,6 +15,30 @@ body {
     line-height: 2;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 768px) {
+    #header-wrapper {
+        height: 260px !important;
+    }
+    #header {
+        height: 300px !important;
+    }
+    .BanBan {
+        font-size: 45px !important;
+    }
+    #content{
+        width: 100% !important;
+    }
+    .post:first-child{
+        margin-top: 0px !important;
+    }
+    .post{
+        margin-top: 40px !important;
+    }
+}
 /*header*/
 
 #header {
@@ -69,29 +93,24 @@ body {
     width: 100px;
 }
 
-@media screen and (max-width: 768px) {
-    #header-wrapper {
-        height: 260px;
-    }
-    #header {
-        height: 300px;
-    }
-    .BanBan {
-        font-size: 45px !important;
-    }
-}
+
 
 /* main*/
 
 #content {
     min-height: 600px;
-    width: 73%;
+    width: 65%;
+}
+
+.post:first-child {
+    margin-top: 0px !important;
 }
 
 .post {
     display: block;
     position: relative;
     background: #fff;
+    margin-top: 70px;
 }
 
 .post::before {
@@ -192,6 +211,7 @@ body {
 
 .post-button {
     margin-top: 20px;
+    padding-bottom: 10px;
 }
 
 .text-center {
@@ -210,15 +230,32 @@ body {
 
 .sidebar {
     float: right;
-    width: 27%;
-    background-color: #fff;
-    position: relative;
-    top: -600px;
-    right: -30px;
-    bottom: 0px;
+    width: 30%;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    bottom: 0;
     text-align: center;
 }
 
+.sidebar .sidebar-item:first-child {
+    margin-top: 0px;
+}
+
+.sidebar .sidebar-item {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 6px;
+    margin-top: 20px;
+    color: #ee7878;
+    font-weight: 700;
+    font-size:20px;
+}
+.sidebar .sidebar-item h2{
+    color: #ee7878;
+    font-weight: 700;
+    font-size:20px;
+}
 .sidebar .mydesc .sweet {
     background-color: #fff;
     width: 90%;
@@ -231,9 +268,16 @@ body {
 }
 
 .sidebar .mydesc h2 {
+    margin-top: -5px;
     font-size: 25px;
     color: #ee7878;
     line-height: 2.5;
+    font-weight: 700;
+}
+
+.sidebar .mydesc .my-item {
+    margin-top: -15px;
+    padding-top: 5px;
 }
 
 .sidebar .mydesc .my-item>a {
@@ -249,4 +293,23 @@ body {
     outline: none;
     margin-left: 5px;
     margin-bottom: 10px;
+}
+.sidebar .sidebar-item .likeme span{
+    font-size: 35px;
+    font-weight: 400;
+    padding-left: 7px;
+    position: relative;
+    top:-4px;
+}
+
+.sidebar .sidebar-item .likeme h2{
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 25px;
+}
+.sidebar .closebar{
+    min-height: 50px;
+}
+.sidebar .closebar h2{
+    padding-top: 15px;
 }
