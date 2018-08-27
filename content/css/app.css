@@ -313,3 +313,7 @@ body {
 .sidebar .closebar h2{
     padding-top: 15px;
 }
+/* page bar*/
+#page-bar{
+    text-align: center;
+}
